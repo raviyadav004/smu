@@ -1,622 +1,226 @@
-<!DOCTYPE HTML>
-<html lang="eng">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Surajmal University</title>
-    <link rel="icon" type="image/x-icon" href="surajmal logo.jpeg" style="border-radius: 50%;">
-    <meta content="text/html; charset=iso-8859-2" http-equiv="Content-Type">
-    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-    <link rel="stylesheet" href="mn.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
-    <link href="https://fonts.googleapis.com/css2?family=Anta&amp;family=Dosis:wght@200..800&amp;family=Kode+Mono:wght@700&amp;family=Oswald:wght@200..700&amp;family=PT+Sans+Caption:wght@400;700&amp;family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;family=Russo+One&amp;display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
-
+<!DOCTYPE html>
+<html>
+<head>
+<title>W3.CSS Template</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
+.w3-row-padding img {margin-bottom: 12px}
+/* Set the width of the sidebar to 120px */
+.w3-sidebar {width: 120px;background: #222;}
+/* Add a left margin to the "page content" that matches the width of the sidebar (120px) */
+#main {margin-left: 120px}
+/* Remove margins from "page content" on small screens */
+@media only screen and (max-width: 600px) {#main {margin-left: 0}}
+</style>
 </head>
-  <body class="body">
+<body class="w3-black">
 
-    <nav class="navbar navbar-expand-lg bg-body-tertiary navbar-custom ">
-        <div class="container-fluid">
-            <a class="navbar-brand" href="#"> <img src="surajmal logo.jpeg" alt="Logo" width="30" height="24" class="d-inline-block align-text-top">Surajmal University</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                    <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="index.html">Home</a>
-                    </li>
+<!-- Icon Bar (Sidebar - hidden on small screens) -->
+<nav class="w3-sidebar w3-bar-block w3-small w3-hide-small w3-center">
+  <!-- Avatar image in top left corner -->
+  <img src="/w3images/avatar_smoke.jpg" style="width:100%">
+  <a href="#" class="w3-bar-item w3-button w3-padding-large w3-black">
+    <i class="fa fa-home w3-xxlarge"></i>
+    <p>HOME</p>
+  </a>
+  <a href="#about" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
+    <i class="fa fa-user w3-xxlarge"></i>
+    <p>ABOUT</p>
+  </a>
+  <a href="#photos" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
+    <i class="fa fa-eye w3-xxlarge"></i>
+    <p>PHOTOS</p>
+  </a>
+  <a href="#contact" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
+    <i class="fa fa-envelope w3-xxlarge"></i>
+    <p>CONTACT</p>
+  </a>
+</nav>
 
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Adiministration</a>
-                    </li>
+<!-- Navbar on small screens (Hidden on medium and large screens) -->
+<div class="w3-top w3-hide-large w3-hide-medium" id="myNavbar">
+  <div class="w3-bar w3-black w3-opacity w3-hover-opacity-off w3-center w3-small">
+    <a href="#" class="w3-bar-item w3-button" style="width:25% !important">HOME</a>
+    <a href="#about" class="w3-bar-item w3-button" style="width:25% !important">ABOUT</a>
+    <a href="#photos" class="w3-bar-item w3-button" style="width:25% !important">PHOTOS</a>
+    <a href="#contact" class="w3-bar-item w3-button" style="width:25% !important">CONTACT</a>
+  </div>
+</div>
 
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Admission</a>
-                    </li>
-                    
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                            Admission
-                        </a>
-                        <ul class="dropdown-menu">
-                            <li><a class="dropdown-item" href="#">Facility</a></li>
-                            <li><a class="dropdown-item" href="#">Gallery</a></li>
-                            <li><a class="dropdown-item" href="#">Academics</a></li>
-                            <li>
-                                <hr class="dropdown-divider">
-                            </li>
-                            <li><a class="dropdown-item" href="#">About us</a></li>
-                            <li><a class="dropdown-item" href="#">Contact us</a></li>
-                            <li><a class="dropdown-item" href="#">Notice</a></li>
-                        </ul>
-                    </li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                            Academic
-                        </a>
-                        <ul class="dropdown-menu">
-                            <li><a class="dropdown-item" href="#">Facility</a></li>
-                            <li><a class="dropdown-item" href="#">Gallery</a></li>
-                            <li><a class="dropdown-item" href="#">Academics</a></li>
-                            <li>
-                                <hr class="dropdown-divider">
-                            </li>
-                            <li><a class="dropdown-item" href="#">About us</a></li>
-                            <li><a class="dropdown-item" href="#">Contact us</a></li>
-                            <li><a class="dropdown-item" href="#">Notice</a></li>
-                        </ul>
-                    </li>
+<!-- Page Content -->
+<div class="w3-padding-large" id="main">
+  <!-- Header/Home -->
+  <header class="w3-container w3-padding-32 w3-center w3-black" id="home">
+    <h1 class="w3-jumbo"><span class="w3-hide-small">I'm</span> John Doe.</h1>
+    <p>Photographer and Web Designer.</p>
+    <img src="/w3images/man_smoke.jpg" alt="boy" class="w3-image" width="992" height="1108">
+  </header>
 
-
-                </ul>
-                <form class="d-flex" role="search">
-                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                    <button class="btn btn-outline-success" type="submit" onclick="search()">Search</button>
-
-
-
-                </form>
-            </div>
-        </div>
-    </nav>
-    <!-- breadcrump -->
-    <nav aria-label="breadcrumb">
-        <ol class="breadcrumb">
-            <li class="breadcrumb-item"><a href="index.html">Home</a></li>
-            <li class="breadcrumb-item active" aria-current="page">Contact us</li>
-            <li class="breadcrumb-item active" aria-current="page">About us</li>
-        </ol>
-    </nav>
-    <!-- alert-->
-    <div class="alert alert-success alert-dismissible fade show" role="alert">
-        <strong><span class="material-symbols-outlined d-inline-block align-text-top  icon-link-hover">
-                warning
-            </span>Hooray!</strong> You have sucessfully logged in.
-        <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+  <!-- About Section -->
+  <div class="w3-content w3-justify w3-text-grey w3-padding-64" id="about">
+    <h2 class="w3-text-light-grey">My Name</h2>
+    <hr style="width:200px" class="w3-opacity">
+    <p>Some text about me. Some text about me. I am lorem ipsum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
+      ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur
+      adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+    </p>
+    <h3 class="w3-padding-16 w3-text-light-grey">My Skills</h3>
+    <p class="w3-wide">Photography</p>
+    <div class="w3-white">
+      <div class="w3-dark-grey" style="height:28px;width:95%"></div>
     </div>
-
-
-
-    <div class="container-md text-bg-success ">
-        <div class="ki container-md "></div>
+    <p class="w3-wide">Web Design</p>
+    <div class="w3-white">
+      <div class="w3-dark-grey" style="height:28px;width:85%"></div>
     </div>
-    <!--sidebar-->
-    <div class="sidebar  ">
-        <a href="#" title="Apply Now" data-bs-toggle="popover" data-bs-placement="left" data-bs-content="Content"><i class="bi bi-check-lg"></i></a>
-        <a href="#" title="Call Now" data-bs-toggle="popover" data-bs-placement="left" data-bs-content="Content"><i class="bi bi-telephone-fill"></i></a>
-        <a href="#" title="Mail us" data-bs-toggle="popover" data-bs-placement="left" data-bs-content="Content"><i class="bi bi-envelope-fill"></i></a>
-        <a href="#" title="ENquire Now" data-bs-toggle="popover" data-bs-placement="left" data-bs-content="Content"><i class="bi bi-envelope-paper-fill"></i></a>
-        <a href="whatsapp://send?phone=+919568538052" title="Chat With us" data-bs-toggle="popover" data-bs-placement="left" data-bs-content="Content"><i class="bi bi-whatsapp "></i></a>
-    </div>
- <!-- facilty main-->
-    <div class="facilty-pdiv">
-        <div class="spacemdiv"></div>
-        <div class="cardss">
-            <div class="cardd">
-                <img src="photo.jpg" alt="...">
-            </div>
-            <div class="cardsss">
-                <h9>President
-                    <p> Dr. Nikhil Koranga</p>
-
-            </h9></div>
-        </div>
-        <div class="spacemdiv"></div>
-        <div class="cardss">
-            <div class="cardd">
-                <img src="photo.jpg" alt="...">
-            </div>
-            <div class="cardsss">
-                <h9>Chancellor
-                    <p> Dr. Bhaskar Joshi</p>
-
-            </h9></div>
-        </div>
-        <div class="spacemdiv"></div>
-        <div class="cardss">
-            <div class="cardd">
-                <img src="photo.jpg" alt="...">
-            </div>
-            <div class="cardsss">
-                <h9>Vice Chancellor
-                    <p> Dr. Ravi Yadav</p>
-
-            </h9></div>
-        </div>
-        <div class="spacemdiv"></div>
-        <div class="cardss">
-            <div class="cardd">
-                <img src="photo.jpg" alt="...">
-            </div>
-            <div class="cardsss">
-                <h9>Dean
-                    <p> Dr. Harshit Pant</p>
-
-            </h9></div>
-        </div>
-    </div>
-     <!-- facilty main-->
-    <div class="facilty-pdiv">
-        <div class="spacemdiv"></div>
-        <div class="cardss">
-            <div class="cardd">
-                <img src="photo.jpg" alt="...">
-            </div>
-            <div class="cardsss">
-                <h9>HOD
-                    <p> Dr. Shivam Joshi</p>
-
-            </h9></div>
-        </div>
-        <div class="spacemdiv"></div>
-        <div class="cardss">
-            <div class="cardd">
-                <img src="https://media.istockphoto.com/id/1203928517/photo/medical-concept-of-asian-beautiful-female-doctor-in-white-coat-with-stethoscope-waist-up.webp?b=1&amp;s=170667a&amp;w=0&amp;k=20&amp;c=lX84BogjCK_N04pKzX78f82jhXbFBTB60wa-_0q4e_w=" alt="...">
-            </div>
-            <div class="cardsss">
-                <h9>Nurshing principle
-                    <p> Dr. Pawan Joshi</p>
-
-            </h9></div>
-        </div>
-        <div class="spacemdiv"></div>
-        <div class="cardss">
-            <div class="cardd">
-                <img src="https://images.unsplash.com/photo-1540076156429-35ffe82b7870?w=500&amp;auto=format&amp;fit=crop&amp;q=60&amp;ixlib=rb-4.0.3&amp;ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8YW50aSUyMGxvdmVyfGVufDB8fDB8fHww" alt="...">
-            </div>
-            <div class="cardsss">
-                <h9>Anti Lover Squad
-                    <p> Dr. Pawan Joshi</p>
-
-            </h9></div>
-        </div>
-        <div class="spacemdiv"></div>
-        <div class="cardss">
-            <div class="cardd">
-                <img src="https://plus.unsplash.com/premium_photo-1672699530943-10b3e454bc1e?w=500&amp;auto=format&amp;fit=crop&amp;q=60&amp;ixlib=rb-4.0.3&amp;ixid=M3wxMjA3fDB8MHxzZWFyY2h8MzJ8fHByaW5jaXBsZXxlbnwwfHwwfHx8MA%3D%3D" alt="...">
-            </div>
-            <div class="cardsss">
-                <h9>Registrar
-                    <p> Dr. Atul</p>
-
-            </h9></div>
-        </div>
-    </div>
-     <!-- facilty main-->
-    <div class="facilty-pdiv">
-        <div class="spacemdiv"></div>
-        <div class="cardss">
-            <div class="cardd">
-                <img src="https://plus.unsplash.com/premium_photo-1681488088523-ef98813db228?w=500&amp;auto=format&amp;fit=crop&amp;q=60&amp;ixlib=rb-4.0.3&amp;ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTN8fGV4YW0lMjBjb250cm9sbGVyfGVufDB8fDB8fHww" alt="...">
-            </div>
-            <div class="cardsss">
-                <h9>Exam Controller
-                    <p> Dr.Jatin</p>
-
-            </h9></div>
-        </div>
-        <div class="spacemdiv"></div>
-        <div class="cardss">
-            <div class="cardd">
-                <img src="https://plus.unsplash.com/premium_photo-1681488088523-ef98813db228?w=500&amp;auto=format&amp;fit=crop&amp;q=60&amp;ixlib=rb-4.0.3&amp;ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTN8fGV4YW0lMjBjb250cm9sbGVyfGVufDB8fDB8fHww" alt="...">
-            </div>
-            <div class="cardsss">
-                <h9>Exam Controller
-                    <p> Dr. Anughra</p>
-
-            </h9></div>
-        </div>
-        <div class="spacemdiv"></div>
-        <div class="cardss">
-            <div class="cardd">
-                <img src="https://images.unsplash.com/photo-1551218372-a8789b81b253?w=500&amp;auto=format&amp;fit=crop&amp;q=60&amp;ixlib=rb-4.0.3&amp;ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8Y2FudGVlbnxlbnwwfHwwfHx8MA%3D%3D" alt="...">
-            </div>
-            <div class="cardsss">
-                <h9>Canteen Head
-                    <p> Dr. pawan joshi</p>
-
-            </h9></div>
-        </div>
-        <div class="spacemdiv"></div>
-        <div class="cardss">
-            <div class="cardd">
-                <img src="https://plus.unsplash.com/premium_photo-1664392455446-1e636959468b?w=500&amp;auto=format&amp;fit=crop&amp;q=60&amp;ixlib=rb-4.0.3&amp;ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8bGlicmFyeXxlbnwwfHwwfHx8MA%3D%3D" alt="...">
-            </div>
-            <div class="cardsss">
-                <h9>Library
-                    <p> Dr. Pawan Joshi</p>
-
-            </h9></div>
-        </div>
-    </div>
-     <!-- facilty main-->
-    <div class="facilty-pdiv">
-        <div class="spacemdiv"></div>
-        <div class="cardss">
-            <div class="cardd">
-                <img src="https://plus.unsplash.com/premium_photo-1661905921900-a8b49e65feeb?w=500&amp;auto=format&amp;fit=crop&amp;q=60&amp;ixlib=rb-4.0.3&amp;ixid=M3wxMjA3fDB8MHxzZWFyY2h8OXx8bGlicmFyeXxlbnwwfHwwfHx8MA%3D%3D" alt="...">
-            </div>
-            <div class="cardsss">
-                <h9>Library
-                    <p> Simranjeet Kaur</p>
-
-            </h9></div>
-        </div>
-        <div class="spacemdiv"></div>
-        <div class="cardss">
-            <div class="cardd">
-                <img src="https://plus.unsplash.com/premium_photo-1661964155525-fe70c0f7162b?w=500&amp;auto=format&amp;fit=crop&amp;q=60&amp;ixlib=rb-4.0.3&amp;ixid=M3wxMjA3fDB8MHxzZWFyY2h8MjV8fGxpYnJhcnl8ZW58MHx8MHx8fDA%3D" alt="...">
-            </div>
-            <div class="cardsss">
-                <h9>Library
-                    <p> Priyanshu</p>
-
-            </h9></div>
-        </div>
-        <div class="spacemdiv"></div>
-        <div class="cardss">
-            <div class="cardd">
-                <img src="https://images.unsplash.com/photo-1622126195600-41efc0b028e2?w=500&amp;auto=format&amp;fit=crop&amp;q=60&amp;ixlib=rb-4.0.3&amp;ixid=M3wxMjA3fDB8MHxzZWFyY2h8N3x8YWRtaXNzaW9ufGVufDB8fDB8fHww" alt="...">
-            </div>
-            <div class="cardsss">
-                <h9>Admission cell
-                    <p> Dr.Aman</p>
-
-            </h9></div>
-        </div>
-        <div class="spacemdiv"></div>
-        <div class="cardss">
-            <div class="cardd">
-                <img src="https://images.unsplash.com/photo-1569653402334-2e98fbaa80ee?w=500&amp;auto=format&amp;fit=crop&amp;q=60&amp;ixlib=rb-4.0.3&amp;ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8Y29tcHV0ZXIlMjBsYWJ8ZW58MHx8MHx8fDA%3D" alt="...">
-            </div>
-            <div class="cardsss">
-                <h9>FOCP Lab
-                    <p> Dr. Mukesh</p>
-
-            </h9></div>
-        </div>
-    </div>
-     <!-- facilty main-->
-    <div class="facilty-pdiv">
-        <div class="spacemdiv"></div>
-        <div class="cardss">
-            <div class="cardd">
-                <img src="https://images.unsplash.com/photo-1579952363873-27f3bade9f55?w=500&amp;auto=format&amp;fit=crop&amp;q=60&amp;ixlib=rb-4.0.3&amp;ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8U3BvcnRzfGVufDB8fDB8fHww" alt="...">
-            </div>
-            <div class="cardsss">
-                <h9>Sport Head
-                    <p>Anughra</p>
-
-            </h9></div>
-        </div>
-        <div class="spacemdiv"></div>
-        <div class="cardss">
-            <div class="cardd">
-                <img src="https://plus.unsplash.com/premium_photo-1677159499898-b061fb5bd2d7?w=500&amp;auto=format&amp;fit=crop&amp;q=60&amp;ixlib=rb-4.0.3&amp;ixid=M3wxMjA3fDB8MHxzZWFyY2h8OXx8bG91ZHNwZWFrZXJ8ZW58MHx8MHx8fDA%3D" alt="...">
-            </div>
-            <div class="cardsss">
-                <h9>Loud Speaker
-                    <p> Dr. Shruti</p>
-
-            </h9></div>
-        </div>
-        <div class="spacemdiv"></div>
-        <div class="cardss">
-            <div class="cardd">
-                <img src="https://images.unsplash.com/photo-1541537103745-ea3429c65dc4?w=500&amp;auto=format&amp;fit=crop&amp;q=60&amp;ixlib=rb-4.0.3&amp;ixid=M3wxMjA3fDB8MHxzZWFyY2h8MjJ8fG1hcmtldGluZ3xlbnwwfHwwfHx8MA%3D%3D" alt="...">
-            </div>
-            <div class="cardsss">
-                <h9>Marketing Manager 
-                    <p> Dr. Shifa</p>
-
-            </h9></div>
-        </div>
-        <div class="spacemdiv"></div>
-        <div class="cardss">
-            <div class="cardd">
-                <img src="https://plus.unsplash.com/premium_photo-1677947180401-80c8ffba2da2?w=500&amp;auto=format&amp;fit=crop&amp;q=60&amp;ixlib=rb-4.0.3&amp;ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTV8fGdhdGVrZWVwZXJ8ZW58MHx8MHx8fDA%3D" alt="...">
-            </div>
-            <div class="cardsss">
-                <h9>Gatekeeper
-                    <p> Mayank</p>
-
-            </h9></div>
-        </div>
-    </div>
-     <!-- facilty main-->
-    <div class="facilty-pdiv">
-        <div class="spacemdiv"></div>
-        <div class="cardss">
-            <div class="cardd">
-                <img src="https://images.unsplash.com/photo-1705348509334-bb5f34731c4f?w=500&amp;auto=format&amp;fit=crop&amp;q=60&amp;ixlib=rb-4.0.3&amp;ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nnx8Z2F0ZWtlZXBlcnxlbnwwfHwwfHx8MA%3D%3D" alt="...">
-            </div>
-            <div class="cardsss">
-                <h9>Gatekeeper1
-                    <p> Sameer</p>
-
-            </h9></div>
-        </div>
-        <div class="spacemdiv"></div>
-        <div class="cardss">
-            <div class="cardd">
-                <img src="https://plus.unsplash.com/premium_photo-1699555730874-fd00ca765dc2?w=500&amp;auto=format&amp;fit=crop&amp;q=60&amp;ixlib=rb-4.0.3&amp;ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTN8fGdhdGVrZWVwZXJ8ZW58MHx8MHx8fDA%3D" alt="...">
-            </div>
-            <div class="cardsss">
-                <h9>Gatekeeper 2
-                    <p> Prashant</p>
-
-            </h9></div>
-        </div>
-        <div class="spacemdiv"></div>
-        <div class="cardss">
-            <div class="cardd">
-                <img src="https://images.unsplash.com/photo-1604360898901-ddcbeafab6ee?w=500&amp;auto=format&amp;fit=crop&amp;q=60&amp;ixlib=rb-4.0.3&amp;ixid=M3wxMjA3fDB8MHxzZWFyY2h8NTZ8fHdhcmRlbnxlbnwwfHwwfHx8MA%3D%3D" alt="...">
-            </div>
-            <div class="cardsss">
-                <h9>Gatekeeper3
-                    <p>Faraz</p>
-
-            </h9></div>
-        </div>
-        <div class="spacemdiv"></div>
-        <div class="cardss">
-            <div class="cardd">
-                <img src="https://plus.unsplash.com/premium_photo-1698170370970-2d09a5f21913?w=500&amp;auto=format&amp;fit=crop&amp;q=60&amp;ixlib=rb-4.0.3&amp;ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8d2FyZGVufGVufDB8fDB8fHww" alt="...">
-            </div>
-            <div class="cardsss">
-                <h9>Warden
-                    <p> Dr.Jyoti</p>
-
-            </h9></div>
-        </div>
-    </div>
-     <!-- facilty main-->
-    <div class="facilty-pdiv">
-        <div class="spacemdiv"></div>
-        <div class="cardss">
-            <div class="cardd">
-                <img src="https://plus.unsplash.com/premium_photo-1661754432454-a8d874156419?w=500&amp;auto=format&amp;fit=crop&amp;q=60&amp;ixlib=rb-4.0.3&amp;ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTE2fHxjb21tdW5pY2F0b3J8ZW58MHx8MHx8fDA%3D" alt="...">
-            </div>
-            <div class="cardsss">
-                <h9>Communication
-                    <p> Dr. Jaydip</p>
-
-            </h9></div>
-        </div>
-        <div class="spacemdiv"></div>
-        <div class="cardss">
-            <div class="cardd">
-                <img src="https://plus.unsplash.com/premium_photo-1670650045376-fa3b1784d279?w=500&amp;auto=format&amp;fit=crop&amp;q=60&amp;ixlib=rb-4.0.3&amp;ixid=M3wxMjA3fDB8MHxzZWFyY2h8OXx8dHJhbnNwb3J0fGVufDB8fDB8fHww" alt="...">
-            </div>
-            <div class="cardsss">
-                <h9>Transport Head 
-                    <p> Dr. Gaurav</p>
-
-            </h9></div>
-        </div>
-        <div class="spacemdiv"></div>
-        <div class="cardss">
-            <div class="cardd">
-                <img src="https://plus.unsplash.com/premium_photo-1675798983878-604c09f6d154?w=500&amp;auto=format&amp;fit=crop&amp;q=60&amp;ixlib=rb-4.0.3&amp;ixid=M3wxMjA3fDB8MHxzZWFyY2h8NjV8fHBsYWNlbWVudHxlbnwwfHwwfHx8MA%3D%3D" alt="...">
-            </div>
-            <div class="cardsss">
-                <h9>Placement Head
-                    <p> Dr. Sourabh</p>
-
-            </h9></div>
-        </div>
-        <div class="spacemdiv"></div>
-        <div class="cardss">
-            <div class="cardd">
-                <img src="https://plus.unsplash.com/premium_photo-1677022383099-555c0bcc63e5?w=500&amp;auto=format&amp;fit=crop&amp;q=60&amp;ixlib=rb-4.0.3&amp;ixid=M3wxMjA3fDB8MHxzZWFyY2h8MzN8fGZpbmFuY2V8ZW58MHx8MHx8fDA%3Dphoto.jpg" alt="...">
-            </div>
-            <div class="cardsss">
-                <h9>Finance
-                    <p> Dr. Mohit Badhani</p>
-
-            </h9></div>
-        </div>
-    </div>
-     <!-- facilty main-->
-    <div class="facilty-pdiv">
-        <div class="spacemdiv"></div>
-        <div class="cardss">
-            <div class="cardd">
-                <img src="https://images.unsplash.com/photo-1535303311164-664fc9ec6532?w=500&amp;auto=format&amp;fit=crop&amp;q=60&amp;ixlib=rb-4.0.3&amp;ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8c29jaWFsJTIwbWVkaWF8ZW58MHx8MHx8fDA%3D" alt="...">
-            </div>
-            <div class="cardsss">
-                <h9>Social Media Incharge
-                    <p> Dr.  Shvam Joshi</p>
-
-            </h9></div>
-        </div>
-        <div class="spacemdiv"></div>
-        <div class="cardss">
-            <div class="cardd">
-                <img src="https://images.unsplash.com/photo-1484876065684-b683cf17d276?w=500&amp;auto=format&amp;fit=crop&amp;q=60&amp;ixlib=rb-4.0.3&amp;ixid=M3wxMjA3fDB8MHxzZWFyY2h8MjZ8fG11c2ljfGVufDB8fDB8fHww" alt="...">
-            </div>
-            <div class="cardsss">
-                <h9>Music Teacher
-                    <p> Dr. Aradhya</p>
-
-            </h9></div>
-        </div>
-        <div class="spacemdiv"></div>
-        <div class="cardss">
-            <div class="cardd">
-                <img src="https://images.unsplash.com/photo-1481841580057-e2b9927a05c6?w=500&amp;auto=format&amp;fit=crop&amp;q=60&amp;ixlib=rb-4.0.3&amp;ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8Y291cGxlfGVufDB8fDB8fHww" alt="...">
-            </div>
-            <div class="cardsss">
-                <h9>c1
-                    <p> Dr. Ravi Yadav</p>
-
-            </h9></div>
-        </div>
-        <div class="spacemdiv"></div>
-        <div class="cardss">
-            <div class="cardd">
-                <img src="https://plus.unsplash.com/premium_photo-1683740128746-176cff24b9a6?w=500&amp;auto=format&amp;fit=crop&amp;q=60&amp;ixlib=rb-4.0.3&amp;ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8Y291cGxlfGVufDB8fDB8fHww" alt="...">
-            </div>
-            <div class="cardsss">
-                <h9>c2
-                    <p> Dr. Harshit Pant</p>
-
-            </h9></div>
-        </div>
-    </div>
+    <p class="w3-wide">Photoshop</p>
+    <div class="w3-white">
+      <div class="w3-dark-grey" style="height:28px;width:80%"></div>
+    </div><br>
     
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
- <div class="allfooter">
-    <div class="bottomdiv">
-        <div class="bottomdiv1">
-            <div class="btspace"></div>
-            <div class="btt"><div class="textdiv"><h4>Surajmal University</h4>
-            <p>Kichha, U.S.Nagar</p>
-            </div>
-            <div class="imgsdiv"> <img src="surajmal logo.jpeg" alt="">
-            </div></div>
-            <div class="textdiv2"><p>Distt- Udham Singh Nagar<br>State- Uttrakhand<br>Pin Code- 263148<br>Tel- +91-05944-296000<br>
-            </p>
-        </div>
-        </div>
-            <div class="bottomdiv2">
-                <p>
-                   <a href=""> NAAC Public Disclosure</a><br>
-                   <a href="">AICTE Mandatory Disclosure</a><br>
-                   <a href="">IQAC<br></a>
-                   <a href="">ARIIA<br></a>
-                   <a href="">NATS<br></a>
-                   <a href="">UGC<br></a>
-                   <a href="">AICTE<br></a>
-                </p>
-            </div>
-            <div class="bottomdiv3">
-                <p><a href="">Internal Complaint Committee<br></a>
-                    <a href="">Distance &amp; Online Education<br></a>
-                    <a href="">Feedback Form<br></a>
-                    <a href="">Grievance Redressal Form<br></a>
-                    <a href="">Anti-Discrimination Form<br></a>
-                    <a href="">Policies<br></a>
-                </p>
-            </div>
-            <div class="bottomdiv4">
-                <p>
-                    <a href="">Top Classes &amp; Materials<br></a>
-                    <a href="">Certified Courses</a><br>
-                </p>
-            </div>
-            
-        
-    </div>
-    <!-- second fotoer-->
-    <div class="footer">
-        <div class="footers">
-        <ul>
-            <li><a href="">Careers </a></li>
-            <li>|</li>
-            <li><a href="">Disclaimer</a></li>
-            <li>|</li>
-            <li><a href="">Privacy Policy</a></li>
-            <li>|</li>
-            <li><a href=""> Email</a></li>
-            <li>|</li>
-            <li><a href=""> Terms &amp; Conditions</a></li>
-            <li>|</li>
-            <li><a href=""> Refund Policy</a></li>
-            <li>|</li>
-            <li><a href=""> Library</a></li>
-            <li>|</li>
-            <li><a href="">Anti Ragging </a></li>
-            <li>|</li>
-            <li><a href="">Finance</a></li>
-        </ul>
-        
-    </div>
-    <div class="footerr">
-        <ul class="uli">
-            <li class="hre"><a href="https://www.facebook.com/people/Surajmal-University/100077758178414/" class="rrrr"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-facebook" viewBox="0 0 16 16">
-                  <path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951"></path>
-                </svg></a></li>
-            <li class="hre"><a href="https://www.instagram.com/_surajmal_university?igsh=MzRlODBiNWFlZA==" class="rrrr"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-instagram" viewBox="0 0 16 16">
-                  <path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.9 3.9 0 0 0-1.417.923A3.9 3.9 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.9 3.9 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.9 3.9 0 0 0-.923-1.417A3.9 3.9 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599s.453.546.598.92c.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.5 2.5 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.5 2.5 0 0 1-.92-.598 2.5 2.5 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233s.008-2.388.046-3.231c.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92s.546-.453.92-.598c.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92m-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217m0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334"></path>
-                </svg></a></li>
-            <li class="hre"><a href="" class="rrrr"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-twitter-x" viewBox="0 0 16 16">
-                  <path d="M12.6.75h2.454l-5.36 6.142L16 15.25h-4.937l-3.867-5.07-4.425 5.07H.316l5.733-6.57L0 .75h5.063l3.495 4.633L12.601.75Zm-.86 13.028h1.36L4.323 2.145H2.865z"></path>
-                </svg></a></li>
-            <li class="hre"><a href="https://www.linkedin.com/in/surajmal-university-902103239/" class="rrrr"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-linkedin" viewBox="0 0 16 16">
-                  <path d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854zm4.943 12.248V6.169H2.542v7.225zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248S2.4 3.226 2.4 3.934c0 .694.521 1.248 1.327 1.248zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016l.016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225z"></path>
-                </svg></a></li>
-    
-    
-          </ul>
-    </div>
-    
-    <div class="lastfooter">
-        <span>© 2024 Surajmal University - Kichha All Rights Reserved </span>
+    <div class="w3-row w3-center w3-padding-16 w3-section w3-light-grey">
+      <div class="w3-quarter w3-section">
+        <span class="w3-xlarge">11+</span><br>
+        Partners
       </div>
+      <div class="w3-quarter w3-section">
+        <span class="w3-xlarge">55+</span><br>
+        Projects Done
+      </div>
+      <div class="w3-quarter w3-section">
+        <span class="w3-xlarge">89+</span><br>
+        Happy Clients
+      </div>
+      <div class="w3-quarter w3-section">
+        <span class="w3-xlarge">150+</span><br>
+        Meetings
+      </div>
+    </div>
+
+    <button class="w3-button w3-light-grey w3-padding-large w3-section">
+      <i class="fa fa-download"></i> Download Resume
+    </button>
+    
+    <!-- Grid for pricing tables -->
+    <h3 class="w3-padding-16 w3-text-light-grey">My Price</h3>
+    <div class="w3-row-padding" style="margin:0 -16px">
+      <div class="w3-half w3-margin-bottom">
+        <ul class="w3-ul w3-white w3-center w3-opacity w3-hover-opacity-off">
+          <li class="w3-dark-grey w3-xlarge w3-padding-32">Basic</li>
+          <li class="w3-padding-16">Web Design</li>
+          <li class="w3-padding-16">Photography</li>
+          <li class="w3-padding-16">5GB Storage</li>
+          <li class="w3-padding-16">Mail Support</li>
+          <li class="w3-padding-16">
+            <h2>$ 10</h2>
+            <span class="w3-opacity">per month</span>
+          </li>
+          <li class="w3-light-grey w3-padding-24">
+            <button class="w3-button w3-white w3-padding-large w3-hover-black">Sign Up</button>
+          </li>
+        </ul>
+      </div>
+
+      <div class="w3-half">
+        <ul class="w3-ul w3-white w3-center w3-opacity w3-hover-opacity-off">
+          <li class="w3-dark-grey w3-xlarge w3-padding-32">Pro</li>
+          <li class="w3-padding-16">Web Design</li>
+          <li class="w3-padding-16">Photography</li>
+          <li class="w3-padding-16">50GB Storage</li>
+          <li class="w3-padding-16">Endless Support</li>
+          <li class="w3-padding-16">
+            <h2>$ 25</h2>
+            <span class="w3-opacity">per month</span>
+          </li>
+          <li class="w3-light-grey w3-padding-24">
+            <button class="w3-button w3-white w3-padding-large w3-hover-black">Sign Up</button>
+          </li>
+        </ul>
+      </div>
+    <!-- End Grid/Pricing tables -->
+    </div>
+    
+    <!-- Testimonials -->
+    <h3 class="w3-padding-24 w3-text-light-grey">My Reputation</h3>  
+    <img src="/w3images/bandmember.jpg" alt="Avatar" class="w3-left w3-circle w3-margin-right" style="width:80px">
+    <p><span class="w3-large w3-margin-right">Chris Fox.</span> CEO at Mighty Schools.</p>
+    <p>John Doe saved us from a web disaster.</p><br>
+    
+    <img src="/w3images/avatar_g2.jpg" alt="Avatar" class="w3-left w3-circle w3-margin-right" style="width:80px">
+    <p><span class="w3-large w3-margin-right">Rebecca Flex.</span> CEO at Company.</p>
+    <p>No one is better than John Doe.</p>
+  <!-- End About Section -->
+  </div>
+  
+  <!-- Portfolio Section -->
+  <div class="w3-padding-64 w3-content" id="photos">
+    <h2 class="w3-text-light-grey">My Photos</h2>
+    <hr style="width:200px" class="w3-opacity">
+
+    <!-- Grid for photos -->
+    <div class="w3-row-padding" style="margin:0 -16px">
+      <div class="w3-half">
+        <img src="/w3images/wedding.jpg" style="width:100%">
+        <img src="/w3images/rocks.jpg" style="width:100%">
+        <img src="/w3images/sailboat.jpg" style="width:100%">
+      </div>
+
+      <div class="w3-half">
+        <img src="/w3images/underwater.jpg" style="width:100%">
+        <img src="/w3images/chef.jpg" style="width:100%">
+        <img src="/w3images/wedding.jpg" style="width:100%">
+        <img src="/w3images/p6.jpg" style="width:100%">
+      </div>
+    <!-- End photo grid -->
+    </div>
+  <!-- End Portfolio Section -->
+  </div>
+
+  <!-- Contact Section -->
+  <div class="w3-padding-64 w3-content w3-text-grey" id="contact">
+    <h2 class="w3-text-light-grey">Contact Me</h2>
+    <hr style="width:200px" class="w3-opacity">
+
+    <div class="w3-section">
+      <p><i class="fa fa-map-marker fa-fw w3-text-white w3-xxlarge w3-margin-right"></i> Chicago, US</p>
+      <p><i class="fa fa-phone fa-fw w3-text-white w3-xxlarge w3-margin-right"></i> Phone: +00 151515</p>
+      <p><i class="fa fa-envelope fa-fw w3-text-white w3-xxlarge w3-margin-right"> </i> Email: mail@mail.com</p>
+    </div><br>
+    <p>Let's get in touch. Send me a message:</p>
+
+    <form action="/action_page.php" target="_blank">
+      <p><input class="w3-input w3-padding-16" type="text" placeholder="Name" required name="Name"></p>
+      <p><input class="w3-input w3-padding-16" type="text" placeholder="Email" required name="Email"></p>
+      <p><input class="w3-input w3-padding-16" type="text" placeholder="Subject" required name="Subject"></p>
+      <p><input class="w3-input w3-padding-16" type="text" placeholder="Message" required name="Message"></p>
+      <p>
+        <button class="w3-button w3-light-grey w3-padding-large" type="submit">
+          <i class="fa fa-paper-plane"></i> SEND MESSAGE
+        </button>
+      </p>
+    </form>
+  <!-- End Contact Section -->
+  </div>
+  
+    <!-- Footer -->
+  <footer class="w3-content w3-padding-64 w3-text-grey w3-xlarge">
+    <i class="fa fa-facebook-official w3-hover-opacity"></i>
+    <i class="fa fa-instagram w3-hover-opacity"></i>
+    <i class="fa fa-snapchat w3-hover-opacity"></i>
+    <i class="fa fa-pinterest-p w3-hover-opacity"></i>
+    <i class="fa fa-twitter w3-hover-opacity"></i>
+    <i class="fa fa-linkedin w3-hover-opacity"></i>
+    <p class="w3-medium">Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank" class="w3-hover-text-green">w3.css</a></p>
+  <!-- End footer -->
+  </footer>
+
+<!-- END PAGE CONTENT -->
 </div>
-</div>
-
-
-
-
-
-
-
-<script> window.onload =function(){
-    alert("Beaware Of Pawan Joshi!");
-};
-</script>
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
-        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
-        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
-
-        <script src="mn.js"></script>
-
-
 
 </body>
 </html>
